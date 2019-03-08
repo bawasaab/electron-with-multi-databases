@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<div class="article-post">
+                <div style="margin: 10px;" id="share">
+                    
+<!--<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<base href="">
+
+<script>
+const search = instantsearch({
+  appId: 'U6YVQCSK8X',
+  apiKey: 'ec6fc7a5bfac7fb62927073c81b97bbe',
+  indexName: 'te'
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+  let url = `${hit.url}#${hit.anchor}`;
+  //let url = `${hit.url}`;
+  const title = hit._highlightResult.title.value;
+
+  let breadcrumbs = '';
+  if (hit._highlightResult.headings) {
+    breadcrumbs = hit._highlightResult.headings.map(match => {
+      return `<span class="post-breadcrumb">${match.value}</span>`
+    }).join(' > ')
+  }
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="post-item">
+      <span class="post-meta">${date}</span>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+    </div>`;
+}
+
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search our website...',
+    poweredBy: true
+  })
+);
+
+/*search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);*/
+
+search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-breadcrumbs {
+  color: #424242;
+  display: block;
+}
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+}
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+.post-snippet img {
+  display: none;
+}
+</style>-->
+
+<script>
+  (function() {
+    var cx = 'partner-pub-9293763250492023:4546247306';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" placeholder="Custom Search" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div>
+<script type="text/javascript" src="http://www.google.com/cse/query_renderer.js"></script>
+<div id="queries"></div>
+<script src="http://www.google.com/cse/api/partner-pub-9293763250492023/cse/4546247306/queries/js?oe=UTF-8&amp;callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+
+
+
+                </div>
+                                <!-- Begin Mailchimp Signup Form -->
+                                
+                                <div id="mc_embed_signup">
+                                    <form action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                                        <div id="mc_embed_signup_scroll">
+                                            <label for="mce-EMAIL">Get new Angular 7 tutorials</label>
+                                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
+                                            </div>
+                                            <div class="clear">
+                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                            </div>
+                                        <span id="ezoic-pub-ad-placeholder-152" class="ezoic-adpicker-ad"></span><span style="float: none; min-height: 270px; min-width: 300px; display: none !important; margin: 2px 0px !important; text-align: center !important;" class="ezoic-ad box-3 adtester-container adtester-container-152" data-ez-name="techiediaries_com-box-3"><span id="div-gpt-ad-techiediaries_com-box-3-0" ezaw="300" ezah="250" style="position: relative; z-index: 0; min-height: 250px; min-width: 300px;" class="ezoic-ad ezfound" data-google-query-id="CKPM9L7b8eACFYIGiwodvR0PBA"><div id="google_ads_iframe_/1254144/techiediaries_com-box-3_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html" id="google_ads_iframe_/1254144/techiediaries_com-box-3_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="12" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></span></span></div>
+                                    </form>
+                                </div>
+                                
+                                <!--End mc_embed_signup-->
+
+                <h2>Introduction</h2>
+
+<p>Throughout this tutorial, we are going to explore different approaches for persisting and retrieving data in cross-platform desktop applications, built using the Electron platform and web technologies.</p>
+
+<p>We'll see how to use popular SQL and NoSQL databases like MySQL, SQLite, SQLite3, MongoDB and NeDB. And ORMs like Sequelize to perform CRUD operations in Electron apps.  </p>
+
+<p>We'll also cover how to install the required tools, write some sample code, and then see some pros and cons of each approach.
+But first, lets start with an introduction to Electron, for those who are not yet familiar with it.  </p>
+
+<h2>An Introduction to Electron</h2>
+
+<p>Electron was released by Github, back in 2013, allowing web developers to use their existing front-end skills with JavaScript, CSS and HTML to build native-like cross-platform desktop apps for Windows, MAC and Linux with a single code base.  </p>
+
+<p>Electron is based on Google Chromium project and Node.js platform, which means you have an embedded browser with latest web standards (thanks to Chromium) and the whole Node.js modules, available from NPM, at your disposal.</p>
+
+<p>Since Electron is basically a web browser, you can take advantage of the most modern client side frameworks and libraries, such as Angular and React, to build apps not just for the web but for the desktop too.<span id="ezoic-pub-ad-placeholder-143" class="ezoic-adpicker-ad"></span><span style="display: none !important; float: none; min-height: 420px; min-width: 580px; margin: 2px 0px !important;" class="ezoic-ad box-4 adtester-container adtester-container-143" data-ez-name="techiediaries_com-box-4"><span id="div-gpt-ad-techiediaries_com-box-4-0" ezaw="580" ezah="400" style="position: relative; z-index: 0; min-height: 400px; min-width: 580px;" class="ezoic-ad ezfound" data-google-query-id="CL3cqL_b8eACFYg74AodVqEH8A"><div id="google_ads_iframe_/1254144/techiediaries_com-box-4_0__container__" style="border: 0pt none; display: inline-block; width: 580px; height: 400px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html" id="google_ads_iframe_/1254144/techiediaries_com-box-4_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="580" height="400" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="1d" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></span></span></p>
+
+<p>If you have any doubts about Electron, and if it's really changing the way we are developing desktop applications, ignoring the fact that big companies and even Microsoft are using it (You shouldn't), you can simply check the NPM statistics related to the use of Electron from this <a href="https://npm-stat.com/charts.html?package=electron">link</a>. And also the ongoing list of apps created using Electron from this <a href="https://electron.atom.io/apps/">link</a></p>
+
+<h2>Persisting Data in Electron Apps</h2>
+
+<p>First of all, why would you want to do that i.e. persist data?<br>
+In most cases an application needs to persist data, for many reasons such as:</p>
+
+<ul>
+<li><p>Saving user defined settings: 
+There exist many application wide settings or parameters which are different from a user to another and therefor, they need to be set by end users and persisted by some mechanism to avoid losing them between application restarts.</p></li>
+<li><p>Saving domain specific data: 
+In data extensive applications such as enterprise apps, data is the centric element so persistence and retrieval is a crucial feature. This kind of apps needs data storage for keeping track of information or for further processing and analysis.     </p></li>
+<li><p>Adding off-line support: 
+If your application depends on on-line data, and you maybe want to add off-line support then you also need to integrate some mechanism to persist data locally.</p></li>
+<li><p>Implementing caching: 
+There may be some situations when you need to add some sort of disk caching for network data to your application .e.g. In order to optimize app loading time, using an embedded database such as SQLite. </p></li>
+</ul>
+
+<p>Thinking about how to persist data is a key step when developing applications, desktop apps make no exception. The way you use to handle data in your application affects your app performance and as a result the final user experience.</p>
+
+<p>There is a plethora of available mechanisms, for persisting data, ranging from flat files, key-value stores to SQLite and fully fledged database systems such as MySQL, PostgreSQL and Microsoft SQL Server etc.</p>
+
+<p>You can use simple classic storage mediums such as flat files, embedded databases, relational database systems or NoSQL databases. It's completely your call but you need to take into consideration your app requirements, and the pros and cons of each approach to make the right decision.</p>
+
+<h2>How to Choose the Best Way of Persisting Data in Your Electron Apps?</h2>
+
+<p>Nearly all kind of apps need some sort of data storage and retrieval but not every approach is suitable for all use cases, e.g. If you just need to store some configuration data or user defined settings then a flat file or a key-value store such as the HTML5 localStorage, or the HTML5 NoSQL IndexedDB can be very useful and simple mechanisms for this kind of tasks.</p>
+
+<p>localStorage API is quite easy to use. For IndexedDB, the API is a little bit complex but you can use it with wrapper libraries such as Dexie.js which has a simple and clear API.</p>
+
+<p>If you need to persist domain specific data, with a simple structure i.e. with few relationships between different data entities and few attributes, then SQLite or a similar embedded database solution is the right choice for these use cases.</p>
+
+<p>In the case that you are building a complex database application or a data heavy application, with multiple tables and relationships, Using raw SQL can be intimidating and error prone. As so an ORM will be of a great help for you, by allowing you to easily express your database requirements and letting you focus on the business domain side of your application. There exist many JavaScript/TypeScript ORMs that integrate well with Electron ecosystem such as Sequelize, Bookshelf.js and the relatively new TypeORM (based on TypeScript).</p>
+
+<p>There are two major types of databases: relational databases and NoSQL databases. The right database type to use depends heavily on these two points: The nature and structure of your database, and the synchronization requirements. But which are the criteria to use one database type over the other?  </p>
+
+<p>To answer this question lets imagine this scenario:
+You are building an application for an enterprise which needs to keep track of data such as manufacturers, customers, products, orders and invoices. These data are related to each other with different relationships. For example an order belongs to a customer and has many associated products, an invoice is related to some order etc. Besides storing data, you need also to be able to perform simple queries involving either one entity or complex queries joining multiple entities.  </p>
+
+<p>According to these requirements we can draw some points which will help us to decide what database system we'll need to use, for example:</p>
+
+<ul>
+<li>Data entities can be stored in tabular structures with columns and rows.</li>
+<li>Data entities columns (schema) can be predicted, earlier, when developing the application.</li>
+<li>Data integrity is required.</li>
+</ul>
+
+<p>For this use case a relational database is an ideal choice.</p>
+
+<p>If otherwise the schema is not predictable, constantly evolving and needs to be changed overtime, data is unrelated and performance is a primary concern then a NoSQL database is what to be used.    </p>
+
+<p>You can also read <a href="https://www.sitepoint.com/sql-vs-nosql-differences/">this article for further details about SQL vs NoSQL comparison</a>.</p>
+
+<p>Besides that, there are many factors that you also need to consider, such as: </p>
+
+<ul>
+<li><p>Performance,</p></li>
+<li><p>Data portability, </p></li>
+<li><p>In memory vs disk IO based database,</p></li>
+<li><p>Synchronization,</p></li>
+<li><p>Off-line first or not,</p></li>
+<li><p>Serverless or not,</p></li>
+<li><p>Embedded or not,</p></li>
+<li><p>Usage license,    </p></li>
+</ul>
+
+<p>So choosing the right approach, for persisting data, depends on your app requirements. In this article we are going to see some possible, either simple and advanced, mechanisms for persisting data in your Electron apps.</p>
+
+<p>If you would like to test the code, as you continue reading the tutorial, you need to create a new Electron project, you can simply do that with GitHub quick start project, so using your terminal or command prompt start by cloning their repository:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">git clone <a class="vglnk" href="https://github.com/electron/electron-quick-start" rel="nofollow"><span>https</span><span>://</span><span>github</span><span>.</span><span>com</span><span>/</span><span>electron</span><span>/</span><span>electron</span><span>-</span><span>quick</span><span>-</span><span>start</span></a>
+cd electron-quick-start
+</code></pre></div>
+<p>Then install the requirements and start the app:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install
+npm start
+</code></pre></div>
+<p>You can also follow this <a href="https://www.sitepoint.com/desktop-node-apps-with-electron/">tutorial</a> which walks you through installing Electron, building and packaging a simple desktop application. </p>
+
+<h2>Persisting Data with Plain SQL and MySQL Databases</h2>
+
+<p>MySQL is an open source, relational database system created by Michael Widenius. To be able to use MySQL in your system you need to first have it installed, which is dependent on your target operating system but it's generally an easy to follow 
+process. So before working with MySQL in this tutorial or test MySQL demos make sure to install the version of MySQL for your system.  </p>
+
+<p>MySQL is available for most major operating systems including Linux, Mac and Windows.</p>
+
+<h3>Installing MySQL Client for Node.js</h3>
+
+<p>First we need to install the mysql module for Node.js from NPM so go ahead and run: </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install mysql –save
+</code></pre></div>
+<h3>Bootstrapping the Module</h3>
+
+<p>Here are the steps we need to follow to execute SQL queries against our MySQL database using node-mysql module:</p>
+
+<ul>
+<li><p>Import or require mysql module </p></li>
+<li><p>Create a connection object </p></li>
+<li><p>Connect to database</p></li>
+<li><p>Query the database </p></li>
+<li><p>Close the connection</p></li>
+</ul>
+
+<p>We first start by requiring the mysql module:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var mysql      = require('mysql');
+</code></pre></div>
+<p>Then create a connection to database, you need to enter MySQL database system credentials and your database name.</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'YOUR_PASSWORD',
+    database : 'demodb'
+});
+</code></pre></div>
+<p>After creating the connection object we use the connect() method to actually connect to the database</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">connection.connect();
+</code></pre></div>
+<p>At this point, we are ready to execute SQL queries against the database. 
+Lets take a simple example  </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">connection.query('SELECT 1 + 1 AS result', function (error, results, fields) {
+    if (error) throw error;
+    console.log('1 + 1 = ', results[0].result); 
+});
+</code></pre></div>
+<p>If you finish working with a connection, you need to close it, using the end() method </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">connection.end();  
+</code></pre></div>
+<p>As you can see, the API is clear and self explanatory and It’s quite easy to connect to a MySQL database then execute SQL queries. For a simple and complete demo using Electron with MySQL, make sure you check this Github <a href="">repository</a>.</p>
+
+<h3>The Pros and Cons of Using MySQL + Plain SQL</h3>
+
+<p>Using plain SQL with MySQL in Electron apps has some pros and cons so lets start with the pros: 
+* MySQL Doesn't limit Electron cross platform feature since it's available for all operating systems supported by Electron (Windows, Linux and MAC).
+* MySQL can be installed and integrated easily with Electron (see code above).
+* MySQL Node.js client is a native module so it can be used, for all architectures targeted by Electron, without rebuilding.</p>
+
+<p>Now lets look at the cons:</p>
+
+<ul>
+<li>MySQL is not bundled with Electron apps so end users need to install MySQL separately from your application (But there are some methods you can use to silently auto-install MySQL with your application).</li>
+<li>MySQL DBMS is overkill for small Electron projects.</li>
+</ul>
+
+<h2>Persisting Data with Sequelize ORM (+MySQL)</h2>
+
+<p>ORMs are smart software solutions or abstractions for working with SQL databases even if you don't know anything about SQL (the native programming language of relational databases) they are especially useful for creating and working with databases that have complex structures and relationships, so as much as you can admire them you don't really need to use them in every use case. Writing raw SQL can be better, especially for performance, than using an ORM, and not knowing SQL can't be an excuse for missing even some bits of performance.</p>
+
+<h3>What is Sequelize?</h3>
+
+<p>Sequelize is an Object-Relational Mapper that enables JavaScript (Node.js) developers to work with SQL databases without actually writing SQL, but instead using JavaScript objects. An ORM eliminates the need to write raw SQL in order to perform CRUD (Create, Read, Update and Delete) operations, and lets you use one programming language to write application code but also access and work with databases.</p>
+
+<p>You can use Sequelize with many database management systems and engines such as: PostgreSQL, MySQL, SQLite and MSSQL.  </p>
+
+<h3>Installing Sequelize</h3>
+
+<p>Installing Sequelize ORM is also a matter of using the npm install command so open your terminal or command prompt then run: </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install --save sequelize
+</code></pre></div>
+<p>For our use case we are going to use Sequelize with a MySQL DBMS so you also need to install the MySQL client for Node.js using:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install --save mysql2
+</code></pre></div>
+<h3>Using Sequelize</h3>
+
+<p>After installing Sequelize, you can start using it by first creating a connection to your chosen database, for example:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">const Sequelize = require("sequelize");
+const sequelize = new Sequelize('mysql://YOUR_USERNAME:YOUR_PASSWORD@localhost:5432/YOUR_DATABASE_NAME'); 
+</code></pre></div>
+<p>You can pass many options to Sequelize constructor, check them via this <a href="http://docs.sequelizejs.com/class/lib/sequelize.js%7ESequelize.html">link</a>.</p>
+
+<p>Now you are ready to make the connection to database, you can simply use the  authenticate() method:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">sequelize
+.authenticate()
+.then(() =&gt; {
+    console.log('Connection successfully made.');
+})
+.catch(err =&gt; {
+    console.error('Error connecting to database', err);
+});
+</code></pre></div>
+<p>Next we need to create a model using sequelize.define('name', {attributes}, {options}):</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">const Product = sequelize.define('product', {
+    name: {
+        type: Sequelize.STRING
+    },
+    quantity: {
+        type: Sequelize.FLOAT
+    },
+    cost: {
+        type: Sequelize.FLOAT
+    },
+    price: {
+        type: Sequelize.FLOAT
+    },
+    unit: {
+        type: Sequelize.STRING
+    }
+});
+</code></pre></div>
+<p>For more information about creating models in Sequelize ORM <a href="http://docs.sequelizejs.com/manual/tutorial/models-definition.html">check this</a>.</p>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle ezfound" style="display: block; text-align: center; height: 178px;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-9293763250492023" data-ad-slot="2159586419" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:178px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:178px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><iframe width="710" height="178" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:710px;height:178px;"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Next we can create the SQL table and persist some data:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">Product.sync().then(() =&gt; {
+    return Product.create({
+        name: 'Product 001',
+        quantity: 10,
+        cost: 100,
+        price: 120,
+        unit: 'kg' 
+    });
+}); 
+</code></pre></div>
+<p>Now lets make a query for retrieving all products in our database:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">Product.findAll().then(products =&gt; {
+    console.log(products)
+}) 
+</code></pre></div>
+<p>You can find more information about querying databases with Sequelize via this <a href="http://docs.sequelizejs.com/manual/tutorial/querying.html">link</a>.</p>
+
+<p>You can find a working demo for this approach on GitHub from this <a href="">link</a>.</p>
+
+<h3>Pros and Cons of MySQL and Sequelize ORM approach</h3>
+
+<p>Just like the previous approach, the MySQL with Sequelize ORM has some pros and cons. For the pros:</p>
+
+<ul>
+<li>Sequelize supported DBMS and engines are available for all Electron platforms (Windows, Linux and MAC).</li>
+<li>Electron apps can be easily implemented to support mutlipe DBMS (via application settings).</li>
+<li>Better suited for big Electron projects.</li>
+<li>Sequelize is easily integrable with Electron.</li>
+<li>Sequelize Node.js module is not native so it doesn't require any rebuilding to target Electron ABI (Application Binary Interface).</li>
+<li>Users can use your Electron apps with SQLite without having to install any DBMS.</li>
+</ul>
+
+<p>For the cons:</p>
+
+<ul>
+<li>Users need to install the underlying DBMS (except for SQLite).</li>
+<li>ORMs add another layer between your app and database so resulting Electron apps may have performance downgrades.</li>
+</ul>
+
+<p>We have used MySQL for our example but you can also use any Sequelize supported DBMS/engine such as PosgreSQL, MSSQL, Oracle or even SQLite by just installing the corresponding Node.js client and specify the DBMS when instanciating Sequelize (see code above).   </p>
+
+<p>Better yet you can easily offer your application users the choice of setting the DBMS/engine via a configuration option in your app.</p>
+
+<h2>Other similar ORMs</h2>
+
+<p>You can also use other popular ORMs with Electron. For the sake of brevity we are going to mention them without further details:</p>
+
+<ul>
+<li><p><a href="https://github.com/dresende/node-orm2">node-orm2</a>: A Node.js ORM similar to Sequelize ORM that can be used with MySQL/MariaDB, PostgreSQL, MSSQL, Oracle, SQLite, MongoDB and Amazon Redshift.</p></li>
+<li><p><a href="http://bookshelfjs.org/">Bookshelf.js</a>: Another Node.js ORM based on <a href="http://knexjs.org/">Knex query builder</a> and can be used with PostgreSQL, MySQL, MariaDB and SQLite3.</p></li>
+<li><p><a href="https://github.com/typeorm/typeorm">TypeORM</a>: A TypeScript ORM similar to Java Hibernate or PHP Doctrine .It can also be integrated with Electron. </p></li>
+</ul>
+
+<h2>Persisting Data with SQLite</h2>
+
+<p>SQLite is an embedded (serverless), single file SQL database engine. Since the SQLite code is in public domain you can use it for free, either in free or commercial projects without any restrictions. SQLite database tables, indices, triggers, and views, is contained in a single disk file.</p>
+
+<p>SQLite is the most used database engine in the world for many good reasons, so lets see how we can use it with Electron.</p>
+
+<p>P.S. You can also use SQLite with a SQL ORM such as Sequelize or TypeORM. It's a matter of changing one parameter by specifying the database engine as sqlite. </p>
+
+<h3>Installing and Rebuilding SQLite3</h3>
+
+<p>SQLite3 is a native Node.js module so it can't be used directly with Electron without rebuilding it to target Electron.</p>
+
+<p>There are many ways to do that. You can find them from <a href="https://electron.atom.io/docs/tutorial/using-native-node-modules/">Electron documentation</a>.</p>
+
+<p>First install electron-rebuild: </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install --save-dev electron-rebuild
+</code></pre></div>
+<p>Then install sqlite3 module:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install sqlite3 --save
+</code></pre></div>
+<p>Next rebuild sqlite3 for Electron with:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">./node_modules/.bin/electron-rebuild  -f -w sqlite3
+</code></pre></div>
+<p>If the process goes without problems you should be good to go. </p>
+
+<h3>Using SQLite3</h3>
+
+<p>Now lets see a small example of how to use SQLite3, first we need to import sqlite3 module:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">const sqlite3 = require('sqlite3');
+</code></pre></div>
+<p>Then create a Database object to connect to an in-memory database:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var db = new sqlite3.Database(':memory:');
+</code></pre></div>
+<p>You can also use a file based database by specifying the path to a file instead:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var db = new sqlite3.Database('/path/to/database/file.db');
+</code></pre></div>
+<p>Next lets create a table and insert some values ,query them then print the result on the console:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">db.serialize(function () {
+  db.run("CREATE TABLE Products (name, barcode, quantity)");
+
+  db.run("INSERT INTO Products VALUES (?, ?, ?)", ['product001', 'xxxxx', 20]);
+  db.run("INSERT INTO Products VALUES (?, ?, ?)", ['product002', 'xxxxx', 40]);
+  db.run("INSERT INTO Products VALUES (?, ?, ?)", ['product003', 'xxxxx', 60]);
+
+  db.each("SELECT * FROM Products", function (err, row) {
+    console.log(row);
+  });
+});
+</code></pre></div>
+<p>Finally, after finsihing with our database we can close it with: </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">db.close();
+</code></pre></div>
+<h3>Pros and Cons of Using SQLite with Electron</h3>
+
+<p>Just like the previous approaches, Using SQLite with Electron has some pros anc cons. Lets start with the pros:</p>
+
+<ul>
+<li>SQLite can be bundled with your Electron app so the end user doesn't need to install anything beside your application.</li>
+<li>SQLite Doesn't get in the way for Electron cross platform feature since it's available for all platforms that Electron target (Windows, Linux and MAC). </li>
+<li>Suitable for small as medium projects.</li>
+<li>Except for rebuilding gotchas, SQLite can be easily integrated and used with Electron. </li>
+</ul>
+
+<p>Now lets look at the cons:</p>
+
+<ul>
+<li>SQLite is a native module so it needs to be recompiled before it can be used with Electron.</li>
+<li>To target different architectures you need to rebuild SQLite for each possible architecture.</li>
+</ul>
+
+<h2>Persisting Data with MongoDB</h2>
+
+<p>MongoDB is a free and open source NoSQL database system available for Windows, Linux, OS X, Solaris and FreeBSD.</p>
+
+<h3>Installing MongoDB</h3>
+
+<p>MongoDB is separate from Electron but to use it we need to integrate a MongoDB client that can be used to connect to a MongoDB database and communicate with it. Mongoose is a Node.js client for MongoDB so you need first to install it before you can use to communicate with your database.</p>
+
+<p>Using your terminal or command prompt run the following command:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install mongoose --save 
+</code></pre></div>
+<p>Next you need to make sure to re-build mongoose for your target Electron ABI.</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install electron-rebuild --save 
+./node_modules/.bin/electron-rebuild  -f -w mongoose
+</code></pre></div>
+<h3>Using MongoDB</h3>
+
+<p>After installing Mongoose client, you first need to require it:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var mongoose = require('mongoose')
+   ,Schema = mongoose.Schema
+   ,ObjectId = Schema.ObjectId;
+</code></pre></div>
+<p>Next connect to your database with:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">mongoose.connect('mongodb://localhost/my_database',{useMongoClient:true});    
+</code></pre></div>
+<p>Where my_database is the name of your database.</p>
+
+<p>Then create your Mongoose schema(s):</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var productSchema = new Schema({
+    location: ObjectId,
+    date: {type: Date, default: Date.now},
+    family: {name: String},
+    name: String,
+    quantity: Number
+});
+
+var locationSchema = new Schema({
+    name:  String
+});
+</code></pre></div>
+<p>Next create the actual models from the schemas:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var Product  = mongoose.model('Product', productSchema);
+var Location = mongoose.model('Location', locationSchema);
+</code></pre></div>
+<p>Now you can use different APIs to do CRUD operations against your database.
+You can add database rows by creating instances of these objects and call their save() method:</p>
+
+<p>Lets create some locations:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var loc001 = new Location({name:'Location001'}).save();
+var loc002 = new Location({name:'Location002'}).save();
+var loc003 = new Location({name:'Location003'}).save();
+</code></pre></div>
+<p>Lets create some products:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var product001 = new Product({location:loc001._id, family:{name:"family001"},name:"Product001",quantity:10}).save();
+var product002 = new Product({location:loc001._id, family:{name:"family002"},name:"Product002",quantity:20}).save();
+var product003 = new Product({location:loc002._id, family:{name:"family001"},name:"Product002",quantity:30}).save();
+</code></pre></div>
+<p>We can also query for locations and products using the find() method:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">  Location.find(function(err, locations) {
+    console.log(locations);
+  }); 
+  Product.find({location: loc001._id}, function(error, products) {
+      console.log(products);
+  });
+</code></pre></div>
+<p>You can find more documentation about available mongoose APIs from this <a href="http://mongoosejs.com/">link</a>.  </p>
+
+<h3>Pros and Cons of Using MongoDB</h3>
+
+<p>For the pros of using MongoDB with Electron apps:</p>
+
+<ul>
+<li>Available for all Electron suppored platforms such as Windows, Linux and MAC. So it doesn't limit the cross platform feature of Electron.</li>
+<li>Can be installed and integrated easily with Electron.</li>
+</ul>
+
+<p>There are also some cons:</p>
+
+<ul>
+<li>Can't be bundled with Electron so the end users need to install it separately from your application.</li>
+<li>Overkill for small apps.</li>
+</ul>
+
+<h2>Persisting Data with NeDB</h2>
+
+<p>NeDB stands for Node.js Embedded Database, it's a pure JavaScript module with no binary dependency and its API is a subset of MongoDB.
+NeDB can be used as in-memory or as a persistent database.</p>
+
+<h3>Installing NeDB</h3>
+
+<p>You can install NeDB via NPM with:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">npm install nedb --save
+</code></pre></div>
+<p>You can also install the version designed for browsers using bower package manager </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">bower install nedb 
+</code></pre></div>
+<h3>Using NeDB</h3>
+
+<p>Before using the NeDB API you need to require the NeDB module using:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var Datastore = require('nedb');
+</code></pre></div>
+<p>Next you can either create an in-memory database with: </p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var db = new Datastore();
+</code></pre></div>
+<p>Or a persistent datastore by specifying the path to a data file (to be created):</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">var db = new Datastore({ filename: 'path/to/datafile' });
+</code></pre></div>
+<p>Before applying any operations on our created datastore you need to load it into memory using:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">db.loadDatabase(function (err) {    
+  // You can now execute your commands
+});
+</code></pre></div>
+<p>You can also set the autoload parameter to true when creating the datastore to automatically load it in memory without explicetly calling loadDatabase() method.</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">db = new Datastore({ filename: 'path/to/datafile', autoload: true });
+</code></pre></div>
+<p>You can insert a new document using insert method:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">    var doc = { name: 'product001',
+                quantity : 100
+            };
+
+db.insert(doc, function (err, newDoc) {  
+  // newDoc is the newly inserted document
+});
+</code></pre></div>
+<p>To get the inserted documents use the find() method:</p>
+<div class="highlight"><pre class=" language-undefined"><code class="language- language-undefined" data-lang="">db.find({ name: 'product001' }, function (err, docs) {
+      // results
+});
+</code></pre></div>
+<h3>Pros and Cons of Using NeDB with Electron</h3>
+
+<p>Just like the other ways, using NeDB with Electron has some pros and cons so lets start with the pros:</p>
+
+<ul>
+<li>NeDB can be bundled with Electron. </li>
+<li>Since it's pure JavaScript ,you can use it with Electron without re-building it.</li>
+<li>NeDB can be easily integrated and used with Electron.</li>
+<li>NeDB suitable for small and medium projects.</li>
+</ul>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle ezfound" style="display: block; text-align: center; height: 178px;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-9293763250492023" data-ad-slot="2159586419" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:178px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:178px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><iframe width="710" height="178" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:710px;height:178px;"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>For the cons, there aren't much regarding using NeDB with Electron except that:</p>
+
+<ul>
+<li><p>NeDB is not suitable for large scale Electron projects (in this case it can be swapped with MongoDB since they have the same API).</p>
+
+<h3>Other Alernatives</h3></li>
+<li><p><a href="https://github.com/techfort/LokiJS">LokiJS</a> </p></li>
+<li><p><a href="https://github.com/pubkey/rxdb">RxDB</a></p></li>
+<li><p><a href="https://github.com/Irrelon/ForerunnerDB">ForerunnerDB</a></p></li>
+<li><p><a href="https://github.com/Ivshti/linvodb3">LinvoDB</a> </p></li>
+<li><p><a href="https://pouchdb.com/">PouchDB</a></p></li>
+<li><p><a href="https://github.com/typicode/lowdb">lowdb</a> </p></li>
+<li><p><a href="https://realm.io/docs/javascript/latest/">Realm</a></p></li>
+<li><p><a href="https://google.github.io/lovefield/">Lovefield by Google</a></p></li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>There are a plethora of ways for data persistence that can be used in Electron and choosing the right approach depends essentially on 
+your use case(s). If it's only about saving application settings then you can use simple mechanisms such as flat files or HTML5 Storage APIs, for advanced data requirements you should opt for large scale database solutions such as MySQL or MongoDB (with or without ORMs)     </p>
+
+
+                <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle ezfound" style="display: block; height: 426px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-9293763250492023" data-ad-slot="9249041598" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:426px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:426px;margin:0;padding:0;position:relative;visibility:visible;width:710px;background-color:transparent;"><iframe width="710" height="426" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:710px;height:426px;"></iframe></ins></ins></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!--<div class="privy-embed-form" data-campaign="681455"></div>-->
+
+
+            <span id="ezoic-pub-ad-placeholder-142" class="ezoic-adpicker-ad"></span><span style="display: none !important; float: none; min-height: 420px; min-width: 580px; margin: 2px 0px !important;" class="ezoic-ad leader-1 adtester-container adtester-container-142" data-ez-name="techiediaries_com-leader-1"><span id="div-gpt-ad-techiediaries_com-leader-1-0" ezaw="580" ezah="400" style="position:relative;z-index:0;display:inline-block;min-height:400px;min-width:580px;" class="ezoic-ad ezfound" data-google-query-id="CNessIvb8eACFQ2gewodjukOCA"><script data-cfasync="false" type="text/javascript" style="display:none;">eval(ez_write_tag([[580,400],'techiediaries_com-leader-1','ezslot_6',142,'0']));</script><div id="google_ads_iframe_/1254144/techiediaries_com-leader-1_0__container__" style="border: 0pt none; width: 580px; height: 400px;"></div></span></span></div>
+            
+            </body>
+</html>
